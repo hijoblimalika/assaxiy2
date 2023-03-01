@@ -1,0 +1,25 @@
+.subHader__container{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+}
+.subHader__container svg{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 50px;
+    color: #008DFF;
+}
+.subHader__container b{
+    margin-top: 16px;
+    margin-left: 70px;
+}
+.subHader__container b:hover{
+    cursor: pointer;
+    color: #008DFF;
+
+}
+@media screen and (max-width: 1471px) {
+   .subHader__container{
+    display: none;
+   }
+  }

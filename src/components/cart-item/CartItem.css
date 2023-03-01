@@ -1,0 +1,92 @@
+.cartItem{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.cart__item{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    padding-top: 30px;
+}
+.cart__item img{
+    background: #ddd;
+}
+.cart__item:hover{
+    background: #dddddd82;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.qty{
+    width: 90px;
+    border: 1px solid #000200;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 10px;
+    margin: auto;
+}
+.plas{  
+font-size: 20px;
+border: none;
+background: none;
+}
+.minus{
+font-size: 21px;
+border: none;
+background: none;
+}
+.delet{
+    background: linear-gradient(45deg,dodgerblue, violet);
+    border: none;
+    padding: 5px 30px;
+    margin-top: 10px;
+    transition: .3s;
+    border-radius: 6px;
+}
+.delet:hover{
+    padding: 8px 40px;
+    background: var(--bg);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cart__input{
+    width: 400px;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid violet;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+.cart__texta{
+    border-radius: 10px;
+    border: 2px solid violet;
+    padding: 10px;
+}
+.inputs{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.inputs button{
+    padding: 10px 40px;
+    background: linear-gradient(45deg, rgb(0, 255, 0),rgb(255, 22, 255));
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+}
+.inputs button:hover{
+    background: #fff;
+    color: #000;
+    border: 2px solid red;
+}

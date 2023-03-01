@@ -1,0 +1,29 @@
+.til{
+  height: 150vh;  
+}
+.til__container{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+}
+.til__img img{
+    width: 90%;
+}
+.til__text h1{
+    font-size: 45px;
+    padding-top: 150px;
+}
+@media screen and (max-width:800px) {
+   .til__container{
+    display: block;
+   }
+   .til__img img{
+    width: 50%;
+    height: 50vh;
+    margin-left: 25%;
+   }
+   .til__text h1{
+    font-size: 40px;
+    transform: translateY(-80px);
+   }
+}

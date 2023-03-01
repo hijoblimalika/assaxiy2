@@ -1,0 +1,203 @@
+.map{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    gap:  30px;
+    justify-content: center;
+
+}
+
+.map__card{
+    width: 280px;
+    height: 450px;
+    line-height: 1.4;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    object-fit: contain;
+    border-radius: 15px;
+    background-color: #fff;
+    
+}
+.map__title{
+    max-height: 45px;
+}
+.map__heart{
+    position: absolute;
+    top: 10px;
+    right: 2px;
+    font-size: 30px;
+    color: #555;
+}
+.map__img {
+    width: 68%;
+    height: 20%;
+    height: auto;
+    border-radius: 15px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.map__top{
+    font-size: 20px;
+    margin-left: -130px;
+}
+.map__card button{
+    padding: 5px 40px;
+    background: yellow;
+    border-radius: 10px;
+    border: none;
+}
+
+.pro__cart {
+    padding: 12px 24px;
+    border-radius: 25px;
+    border: 2px solid #008DFF;
+    cursor: pointer;
+    background-color: dodgerblue;
+    color:#008DFF;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+    font-weight: 600;
+    width: 200px;
+    height: 52px;
+    /* margin-left: 10%; */
+    margin-top: 10%;
+  }
+  .map__chegirma{
+    position: absolute;
+    top: 30px;
+    width: 100px;
+    height: 25px;
+    color: #fff;
+    border-radius: 5px;
+    background: #FF9800;
+  }
+  .pro__cart span {
+    position: relative;
+    font-size: 15px;
+  }
+  .pro__cart::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #008DFF;
+    border-radius: 10px;
+    transition: 0.3s;
+  }
+  .pro__cart:hover::before {
+    left: 0;
+  }
+  .pro__cart:hover {
+    color: #ffff;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.map__card .pro__cart{
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    font-size: 17px;
+    background: #fff;
+    cursor: pointer;
+    border: 2px solid #555;
+}
+.map__karzinka__icon{
+    width: 40px;
+    height: 35px;
+    border-radius: 5px;
+    background: dodgerblue;
+    color: #fff;
+}
+.map__yulduz__icon {
+    font-size: 20px;
+    color: #008DFF;
+    margin-top: 10px;
+    margin-left: -150px;
+}
+
+@media screen and (max-width: 550px){
+    .map{
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       grid-gap: 5px;
+    }
+    .map__card{
+        width: auto;
+        height: auto;
+        line-height: 1.4;
+        cursor: pointer;
+        margin: 0;
+        text-align: center;
+        position: relative;
+    }
+}
+
+
+/* placeholder css */
+
+.placeholder2{
+    min-height: 500px;
+    padding-top: 20px;
+    width: 250px;
+    border-radius: 2px solid red;
+    display: grid;
+    flex-direction: column;
+    
+}
+.placeholder__img2{
+    height: 300px;
+    border-radius: 16px;
+
+    background: linear-gradient(90deg, #eee,#f7f7f7, #eee);
+    background-size: 200%;
+    animation: pl 1s linear infinite;
+
+}
+.placeholder__text2 div{
+    width: 70%;
+    height: 30px;
+    background: #ddd;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #eee,#f7f7f7, #eee);
+    background-size: 200%;
+    animation: pl 1s linear infinite;
+}
+.placeholder__text2 div:nth-child(3){
+    width: 50%;
+}
+.placeholder__text2 div:nth-child(4){
+    width: 35%;
+}
+@keyframes pl {
+    to{
+        background-position: 200%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .placeholder{
+        grid-template-columns: 1fr;
+    }
+    .placeholder__text div{
+        width: 90%;
+    }
+}
