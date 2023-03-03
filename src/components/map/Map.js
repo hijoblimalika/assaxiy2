@@ -105,7 +105,7 @@ function Products({ admin }) {
             admin ?
               <button onClick={() => deleProduct(item.id)} className='pro__cart'>Delete</button>
               :
-              <button onClick={() => addToCart(item)} className='pro__cart'><span>Savatchaga qo'shish</span></button>
+              <button onClick={() => addToCart(item)} className='pro__cart'><span>Sotib olish</span></button>
           }
         </div>)
       }

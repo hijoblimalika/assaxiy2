@@ -10,6 +10,9 @@
     margin-top: 50px;
 }
 @media screen and (max-width: 996px) {
+   .footer3{
+      margin-left: 50px;
+   }
  .footer3__box1 img{
     width: 400px;
     transform: translateX(-150px);
@@ -39,6 +42,12 @@
     display: none;
  }
 }
+@media screen and (max-width: 800px) {
+.footer3__box2 img{
+   margin-left: 200px;
+}
+
+}
 @media screen and (max-width: 600px) {
 
  .footer3__box2 img{
@@ -52,6 +61,15 @@
 
  .footer3__box2 img{
     width: 300px;
+    transform: translateX(-180px);
+    margin-top: 50px;
+}
+
+}
+@media screen and (max-width: 481px) {
+
+ .footer3__box2 img{
+    width: 350px;
     transform: translateX(-180px);
     margin-top: 50px;
 }

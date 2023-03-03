@@ -133,22 +133,6 @@
     margin-left: -150px;
 }
 
-@media screen and (max-width: 550px){
-    .map{
-       display: grid;
-       grid-template-columns: 1fr 1fr;
-       grid-gap: 5px;
-    }
-    .map__card{
-        width: auto;
-        height: auto;
-        line-height: 1.4;
-        cursor: pointer;
-        margin: 0;
-        text-align: center;
-        position: relative;
-    }
-}
 
 
 /* placeholder css */
@@ -165,11 +149,11 @@
 .placeholder__img2{
     height: 300px;
     border-radius: 16px;
-
+    
     background: linear-gradient(90deg, #eee,#f7f7f7, #eee);
     background-size: 200%;
     animation: pl 1s linear infinite;
-
+    
 }
 .placeholder__text2 div{
     width: 70%;
@@ -186,6 +170,41 @@
 }
 .placeholder__text2 div:nth-child(4){
     width: 35%;
+}
+@media screen and (max-width: 550px){
+    .map{
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       grid-gap: 5px;
+    }
+    .map__card{
+        width: 200px;
+        height: auto;
+        line-height: 1.4;
+        cursor: pointer;
+        margin: 0;
+        text-align: center;
+        position: relative;
+        margin-top: 15px;
+    }
+    .map__top b{
+        font-size: 15px;
+        margin-left: 150px;
+    }
+    .map__yulduz__icon  {
+        margin-left: 1px;
+    }
+    .pro__cart span{
+        font-size: 15px;
+    }
+  
+    .map__card{
+        width: 180px;
+    }
+    .map__yulduz__icon{
+        display: none;
+    }
+  
 }
 @keyframes pl {
     to{

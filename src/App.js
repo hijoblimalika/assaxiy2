@@ -8,11 +8,15 @@ import Like from "./router/like/Like"
 import Trek from "./router/trek/Trek"
 import Til from "./router/til/Til"
 import Tolov from "./router/tolov/Tolov"
-
+import Footer1 from "./components/footer1/Footer1"
+import Footer2 from "./components/footer2/Footer2"
+import Footer3 from "./components/footer3/Footer3"
+import Footer4 from './components/footer4/Footer4'
 import Taqoslash from './router/taqoslash/Taqoslash';
 import SingleRoute from './router/single-router/SingleRouter';
 import { useSelector, } from 'react-redux';
 import Admin from './router/admin/Admin';
+import Footer5 from './components/footer5/Footer5';
 function App() {
   const auth = useSelector(s=> s.auth) 
     return (
@@ -41,6 +45,12 @@ function App() {
       {/* <Footer1/>
       <Footer2/>
       <Footer3/> */}
+
+        <Footer1/>
+        <Footer2/>
+        <Footer3/>
+        <Footer4/>
+        <Footer5/>
     </div>
   );
 }
