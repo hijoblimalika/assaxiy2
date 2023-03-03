@@ -1,7 +1,6 @@
 import React from 'react'
 import "./Cart.css"
 import Empty from '../../components/empty/Empty'
-import photo from "../../assets/3.png"
 import { useSelector } from 'react-redux'
 import CartItem from '../../components/cart-item/CartItem'
 function Cart() {
@@ -10,7 +9,7 @@ function Cart() {
   return (
     <div className='container cart'>
       {
-        cart.length === 0 ? <Empty url={photo} text="Savatchangiz bo'sh" />
+        cart.length === 0 ? <Empty text="Savatcha bo'w" />
           :
           <CartItem karzinka={cart}/>
       }

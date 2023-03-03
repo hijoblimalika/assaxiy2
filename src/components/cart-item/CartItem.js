@@ -80,7 +80,7 @@ function CartItem({ karzinka }) {
           <input className='cart__input' value={tel} onChange={e => setTel(e.target.value)} type="number" placeholder='tel' />
           <input className='cart__input' value={adress} onChange={e => setAdress(e.target.value)} type="text" placeholder='address' />
           <textarea className='cart__texta' value={desc} onChange={e => setDesc(e.target.value)} name="" placeholder='desc' id="" cols="30" rows="10"></textarea>
-          <button onClick={order}>Buyurtma berish</button>
+          <button className='btn' onClick={order}><span>Buyurtma berish</span></button>
         </div>
       </div>
       <div className=" cartItem">
@@ -93,7 +93,7 @@ function CartItem({ karzinka }) {
               <span>{item?.qty}</span>
               <button className='plas' onClick={() => addToCart(item)}>+</button>
             </div>
-            <button className='delet' onClick={() => dispatch({ type: REMOVE_CART, payload: item.id })} >delete</button>
+            <button className='delet ' onClick={() => dispatch({ type: REMOVE_CART, payload: item.id })} >delete</button>
           </div>)
         }
       </div>

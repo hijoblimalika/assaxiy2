@@ -1,11 +1,8 @@
 import React from 'react'
 import "./Like.css"
 import Empty from "../../components/empty/Empty"
-import img from "../../assets/2.png"
 import { useSelector, useDispatch } from 'react-redux'
 import { REMOVE_LIKE } from "../../context/action/actionType"
-import Footer2 from "../../components/footer2/Footer2"
-import Footer3 from "../../components/footer3/Footer3"
 import { Link } from 'react-router-dom'
 function Like() {
   const like = useSelector(s => s.heart)
@@ -14,7 +11,7 @@ function Like() {
     <div className='container like'>
       <h2>Sevimlilar</h2>
       {
-        like.length === 0 ? <Empty url={img} text="Sevimli mahsulotlar yo'q" />
+        like.length === 0 ? <Empty  text="Sevimli mahsulot yo'q" />
           :
           <div className='likes'>
             {
@@ -37,8 +34,6 @@ function Like() {
             }
           </div>
       }
-      <Footer2/>
-      <Footer3/>
     </div>
 
   )
